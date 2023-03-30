@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,300&family=Poppins:wght@300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root{
     --cor-primaria: #F9F5EB;
     --cor-secundaria: #E4DCCF;
@@ -49,6 +44,7 @@ body {
     font-size: 1.5rem;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
+    padding: 5% 0% 5% 0%;
 }
 
 .links{
@@ -72,13 +68,15 @@ body {
 
 .cabecalho__principal{
     display: flex;
-    gap: 80px;
-    padding: 5% 0% 0% 10%;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    gap: 40px;
+    padding: 2% 0% 2% 0%; 
 }
 
 .cabecalho__texto{
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
     color: var(--cor-texto--pricinpal);
     text-decoration: none;
@@ -88,37 +86,17 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--cor-secundaria);
-    padding: 21.5px;
-    font-size: 1.5rem;
+    padding: 2% 0% 2% 0%; 
+    font-size: 1.2rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    color: var(--cor-texto--pricinpal);
 }
 
 .lista{
+    list-style: square;
     color: var(--cor-texto-secundaria);
     font-size: 1.5rem;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 400;
-}
-
-@media (max-width: 720px) {
-    .cabecalho {
-        padding: 10%;
-    }
-
-    .pagina__principal {
-        justify-content: center;
-    }
-
-    .conteudo__principal {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    .apresentacao__conteudo {
-        width: auto;
-    }
-
-    .rodape{
-        padding: auto;
-    }
+    font-weight: 600;
 }
